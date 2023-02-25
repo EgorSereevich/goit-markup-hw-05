@@ -26,8 +26,10 @@
               ><span class="blue-logo">WEB</span>STUDIO</a
             >
             <ul class="list nav-list">
-              <li class="nav-link">
-                <a href="./index.html" class="link list-link">Studio</a>
+              <li class="nav-link nav-link-now">
+                <a href="./index.html" class="link list-link list-link-now"
+                  >Studio</a
+                >
               </li>
               <li class="nav-link">
                 <a href="./portfolio.html" class="link list-link">Portfolio</a>
@@ -58,7 +60,18 @@
       <section class="preview">
         <div class="container">
           <h1 class="preview-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="peview-button">Order Service</button>
+          <button type="button" class="peview-button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="button-close" data-modal-close>
+              <svg class="button-close-svg">
+                <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -458,5 +471,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
